@@ -1,20 +1,27 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   #gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.10.0'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'terminal-notifier-guard'
 end
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'terminal-notifier-guard'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
- gem 'pg', '0.12.2'
+ gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
