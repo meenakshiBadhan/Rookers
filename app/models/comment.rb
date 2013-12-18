@@ -1,14 +1,15 @@
 # == Schema Information
 #
-# Table name: categories
+# Table name: comments
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
+#  user_id    :integer
+#  content    :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Category < ActiveRecord::Base
-  attr_accessible :name
-  has_many :media
+class Comment < ActiveRecord::Base
+  attr_accessible :content, :user_id
+  belongs_to :user
 end

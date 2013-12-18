@@ -2,16 +2,22 @@
 #
 # Table name: users
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id              :integer          not null, primary key
+#  name            :string(255)
+#  email           :string(255)
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string(255)
+#  remember_token  :string(255)
+#  admin           :boolean          default(FALSE)
 #
 
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   has_many :microposts, dependent: :destroy
+  has_many :media
+  has_many :review
+  has_many :comment
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 
 

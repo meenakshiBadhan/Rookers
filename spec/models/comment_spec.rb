@@ -1,15 +1,16 @@
 # == Schema Information
 #
-# Table name: categories
+# Table name: comments
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
+#  user_id    :integer
+#  content    :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'spec_helper'
 
-describe Category do
+describe Comment do
   pending "add some examples to (or delete) #{__FILE__}"
 end
