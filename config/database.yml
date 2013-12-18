@@ -2,9 +2,9 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: sample_app_development
+  database: rookers_development
   pool:     5
-  username: meenakshi
+  username: sourabh
   password: 
   template: template0
 
@@ -30,9 +30,9 @@ test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: sample_app_test
+  database: rookers__test
   pool:     5
-  username: meenakshi
+  username: sourabh
   password: 
   template: template0
 
@@ -40,8 +40,8 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: sample_app_production
+  database: rookers__production
   pool:     5
-  username: meenakshi
+  username: sourabh
   password: 
   template: template0
