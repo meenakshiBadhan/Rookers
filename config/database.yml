@@ -4,7 +4,7 @@ development:
   encoding: unicode
   database: sample_app_development
   pool:     5
-  username: meenakshi
+  username: pratiik
   password: 
   template: template0
 
@@ -32,7 +32,7 @@ test:
   encoding: unicode
   database: sample_app_test
   pool:     5
-  username: meenakshi
+  username: pratiik
   password: 
   template: template0
 
@@ -42,6 +42,6 @@ production:
   encoding: unicode
   database: sample_app_production
   pool:     5
-  username: meenakshi
+  username: pratiik
   password: 
   template: template0
