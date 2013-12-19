@@ -16,5 +16,5 @@ class Media < ActiveRecord::Base
   attr_accessible :category_id, :description, :rating, :title, :user_id
   belongs_to :category
   belongs_to :user
-  has_many :review
+  has_many :reviews
 end

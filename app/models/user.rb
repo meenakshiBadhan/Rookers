@@ -15,9 +15,9 @@
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   has_many :microposts, dependent: :destroy
-  has_many :media
-  has_many :review
-  has_many :comment
+  has_many :medias
+  has_many :reviews
+  has_many :comments
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 
 
