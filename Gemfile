@@ -17,7 +17,10 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
   gem 'annotate'
-
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'jazz_hands'
+  gem 'meta_request'
 end
 
 

@@ -4,6 +4,9 @@ resources :users do
       get :following, :followers
   end
 end
+resources :books
+resources :tv_shows
+resources :movies
 
 resources :sessions, only: [:new, :create, :destroy]
 resources :microposts, only: [:create, :destroy]
