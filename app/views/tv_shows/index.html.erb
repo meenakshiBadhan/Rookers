@@ -1,0 +1,12 @@
+<% provide(:title, 'All TV Shows') %> 
+<h1>All TV Shows</h1>
+
+
+<ul class="books">
+	
+	<% @tv_shows.each do |tv_show| %>
+	<li>
+		<%= link_to tv_show.title, '#' %> 
+	</li>
+	<% end %>
+</ul>
